@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1003376305627",
+    "project_id": "my-vaccine-dca59",
+    "storage_bucket": "my-vaccine-dca59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003376305627:android:cfea9960321c356544f3fe",
+        "android_client_info": {
+          "package_name": "com.example.myvaccine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003376305627-q83i9lcluqlp8vu94stkcs6p1ad25q8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvcW9eoSqkUbwrNkGKi4OCXC5veuyE4Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003376305627-q83i9lcluqlp8vu94stkcs6p1ad25q8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

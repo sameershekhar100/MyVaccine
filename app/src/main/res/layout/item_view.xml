@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="18dp"
+    android:padding="12dp"
+    app:cardCornerRadius="12dp"
+    >
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:backgroundTint="#fff"
+    android:padding="5dp"
+    android:background="@drawable/gradient2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#43A047"
+
+        android:text="Free"
+
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:id="@+id/slot"
+        android:textSize="26sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:text="abcd"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/hosName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:text="abcd"
+        android:id="@+id/hosAdd"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D9D4D4"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:text="amount"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Date"
+            android:gravity="center"
+            android:id="@+id/date"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Covishield"
+            android:id="@+id/vaccine"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="amount"
+            android:id="@+id/amount"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
