@@ -64,7 +64,7 @@ public class VaccineAdaptar extends RecyclerView.Adapter<VaccineAdaptar.slotHold
             textView3=itemView.findViewById(R.id.vaccine);
             textView4=itemView.findViewById(R.id.date);
             textView5=itemView.findViewById(R.id.amount);
-            textView6=itemView.findViewById(R.id.slot);
+            textView6=itemView.findViewById(R.id.slot1);
         }
     }
 }

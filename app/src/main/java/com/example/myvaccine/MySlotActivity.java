@@ -39,7 +39,7 @@ public class MySlotActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_slot);
 
         textView = findViewById(R.id.noslot);
-        Checker=findViewById(R.id.slot);
+        Checker=findViewById(R.id.slot1);
         progressBar=findViewById(R.id.progress);
 
         Intent intent = getIntent();
@@ -87,21 +87,14 @@ public class MySlotActivity extends AppCompatActivity {
 
                             for (int j = 0; j < session.length(); j++) {
                                 JSONObject xx=session.getJSONObject(j);
-
-
                                 vaccine += xx.getString("vaccine") + "\n";
                                 date += xx.getString("date") + "\n";
-
                                 capacity += xx.getInt("available_capacity") + "\n";
-
-
                             }
-
                             if(!vaccine.equals(""))
                             arrayList.add(new Vaccine(name, address, vaccine,date,capacity,feeType));
                         }
                     }
-
                     System.out.println(arrayList.size());
 //                    mv.update(arrayList);
                     VaccineAdaptar vv = new VaccineAdaptar(arrayList);

@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     Spinner s1,s2;
     RadioButton r1,r2;
+    TextView textView;
     Button b1;
     private FirebaseAnalytics mFirebaseAnalytics;
     int stateno,districtno,age;
@@ -51,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         b1=findViewById(R.id.submit);
         r1=findViewById(R.id.youth);
         r2=findViewById(R.id.old);
+        textView=findViewById(R.id.pin);
+
 
         districtarray.add("Enter district");
         myDistrict.add(new District("none","0"));
@@ -61,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
         if(stateno>0){
             getDistrict();
         }
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,PinSearch.class));
+                finish();
+            }
+        });
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 }
+                else
+                    Toast.makeText(MainActivity.this, "Select your State!!", Toast.LENGTH_SHORT).show();
             }
         });
 

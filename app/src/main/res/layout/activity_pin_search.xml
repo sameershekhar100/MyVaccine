@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
-    tools:context=".MainActivity">
-
+    tools:context=".PinSearch">
 
 
     <LinearLayout
@@ -25,8 +23,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Search Your Slot"
+            android:layout_marginBottom="60dp"
             android:textColor="#000"
-            android:textSize="28sp"
+            android:textSize="36sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/layout"
             app:layout_constraintEnd_toEndOf="parent"
@@ -35,57 +34,45 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.842" />
 
-        <Spinner
-            android:id="@+id/state"
-            style="@style/Widget.AppCompat.Spinner.DropDown"
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
+            android:hint="Enter your PINCODE"
+            android:inputType="number"
+            android:layout_margin="18dp"
+            android:id="@+id/edit"
             android:background="@drawable/gradient2"
-            android:padding="5dp"
-            android:spinnerMode="dropdown" />
-
-        <Spinner
-            android:id="@+id/district"
-            style="@style/Widget.AppCompat.Spinner.DropDown"
-            android:layout_width="match_parent"
-
-            android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:background="@drawable/gradient2"
-            android:padding="5dp"
-            android:pointerIcon="arrow"
-            android:spinnerMode="dropdown" />
-
+            android:padding="12dp"/>
         <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="18dp"
             android:orientation="horizontal">
 
 
             <RadioButton
-                android:id="@+id/youth"
+                android:id="@+id/youth_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onRadioButtonClicked"
+                android:onClick="onRadioButtonClicked1"
                 android:text="18+"
                 android:textSize="20sp" />
 
             <RadioButton
-                android:id="@+id/old"
+                android:id="@+id/old_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="onRadioButtonClicked"
+                android:onClick="onRadioButtonClicked1"
                 android:text="45+"
                 android:textSize="20sp" />
 
         </RadioGroup>
 
         <Button
-            android:id="@+id/submit"
+            android:id="@+id/submit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -103,16 +90,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="72dp"
         android:textStyle="bold"
-        android:id="@+id/pin"
+        android:id="@+id/city"
         android:layout_marginEnd="20dp"
-        android:text="Or Search with PIN Code"
+        android:text="Or Search your City"
 
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
